@@ -1,0 +1,91 @@
+.fill_reproducir:hover,
+.fill_reproducir:focus {
+  box-shadow: inset 0 0 0 2em var(--hover);
+}
+
+.fill_pausa:hover,
+.fill_pausa:focus {
+  box-shadow: inset 0 0 0 2em var(--hover);
+}
+
+.fill_subirVolumen:hover,
+.fill_subirVolumen:focus {
+  box-shadow: inset 0 0 0 2em var(--hover);
+}
+
+.fill_bajarVolumen:hover,
+.fill_bajarVolumen:focus {
+  box-shadow: inset 0 0 0 2em var(--hover);
+}
+
+.up_seleccionar:hover,
+.up_seleccionar:focus {
+  box-shadow: inset 0 0 0 2em var(--hover);
+}
+
+.fill_reproducir {
+  --color: #a972cb;
+  --hover: #cb72aa;
+}
+
+.fill_pausa {
+  --color: #cb72ac;
+  --hover: #f289cc;
+}
+
+.fill_subirVolumen {
+  --color: #cb7272;
+  --hover: #ce6060;
+}
+
+.fill_bajarVolumen {
+  --color: #72aacb;
+  --hover: #83b4e9;
+}
+
+
+button {
+  color: var(--color);
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+button:hover, button:focus {
+  border-color: var(--hover);
+  color: #fff;
+}
+
+body {
+  color: #fff;
+  background: #17181c;
+  font: 300 1em 'Fira Sans', sans-serif;
+  -webkit-box-pack: center;
+  justify-content: center;
+  align-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  align-content: space-around;
+  text-align: center;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+button {
+  background: none;
+  border: 2px solid;
+  font: inherit;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 1em 2em;
+}
+
+h1 {
+  font-weight: 400;
+}
+
+code {
+  color: #e4cb58;
+  font: inherit;
+}

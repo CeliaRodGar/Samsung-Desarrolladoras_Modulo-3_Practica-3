@@ -2,29 +2,31 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title></title>
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Carga y reproducción de vídeo</title>
+    <link rel="stylesheet" media="all" href="style.css" />
 </head>
-<body>
 
-<h3>Carga de ficheros</h3>
-<div>
-    <input type="file" id="input" accept="video/*" value="Elegir archivo">
-</div>
+<body>
 <div>
     <video id="video" controls style="display: none;">
         <p>El reproductor que estás usando no permite reproducir este contenido.</p>
     </video>
 </div>
-<div>
-    <button
-    onclick="document.getElementById('video').play();">Reproducir</button>
-    <button
-    onclick="document.getElementById('video').pause();">Pausa</button>
-    <button onclick="document.getElementById('video').volume +=
+
+<div class="buttons">
+    <h1>Elige un <code>vídeo</code> para cargarlo. </h1>
+    <button class="fill_reproducir" onclick="document.getElementById('video').play();">Reproducir</button>
+    <button class="fill_pausa" onclick="document.getElementById('video').pause();">Pausa</button>
+    <button class="fill_subirVolumen" onclick="document.getElementById('video').volume +=
     0.1;">Subir Volumen</button>
-    <button onclick="document.getElementById('video').volume -=
+    <button class="fill_bajarVolumen" onclick="document.getElementById('video').volume -=
     0.1;">Bajar Volumen</button>
+    </div>
+</div>
+
+<div>
+    <input type="file" id="input" accept="video/*" value="Seleccionar archivo"></input>
 </div>
 <script>    
     (function(){
